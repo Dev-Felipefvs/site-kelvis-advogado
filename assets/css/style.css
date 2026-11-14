@@ -1123,3 +1123,4 @@ body.is-ready .hero__caption { transition-delay: 1.1s; }
 .hero__media img { object-position: 50% 18%; }
 @media (min-width: 700px) { .hero__media img { object-position: 50% 22%; } }
 .cta__media img { object-position: 60% 30%; }
+.about__img--detail { width: 32%; }
