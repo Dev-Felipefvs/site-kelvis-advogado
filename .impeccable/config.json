@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-14T12:06:35.279Z",
+        "reason": "agent: full-bleed sections have vertical padding and centered wrap; .areas border-top is an intentional rule line"
+      }
+    ]
+  }
+}

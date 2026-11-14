@@ -159,9 +159,7 @@ html { scrollbar-color: var(--navy-700) var(--navy-950); }
 /* ---------- Hero ---------- */
 .hero {
   position: relative; color: var(--on-navy);
-  background:
-    radial-gradient(120% 80% at 85% 10%, rgba(26, 45, 76, .9) 0%, rgba(11, 22, 38, 0) 60%),
-    var(--navy-900);
+  background: linear-gradient(180deg, var(--navy-800) 0%, var(--navy-900) 70%);
   padding: calc(var(--header-h) + clamp(28px, 6vw, 72px)) 0 clamp(64px, 8vw, 112px);
   overflow: hidden;
 }
