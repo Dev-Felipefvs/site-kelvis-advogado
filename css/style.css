@@ -42,13 +42,14 @@ html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-h) + 8px);
 body {
   margin: 0;
   font: 400 1.0625rem/1.65 var(--sans);
-  color: var(--text);
+  color: var(--on-navy);
   background: var(--navy-900);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   overflow-x: clip;
 }
 img { display: block; max-width: 100%; height: auto; }
+a, button, .btn { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 a { color: inherit; text-underline-offset: .22em; text-decoration-thickness: 1px; }
 ::selection { background: var(--brass); color: var(--navy-950); }
 :focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
@@ -130,7 +131,7 @@ html { scrollbar-color: var(--navy-700) var(--navy-950); }
   .nav {
     position: fixed; inset: var(--header-h) 0 auto; flex-direction: column; align-items: stretch; gap: 0;
     padding: 8px var(--gutter) 24px;
-    background: rgba(11, 22, 38, .97);
+    background: rgba(11, 22, 38, .97); overscroll-behavior: contain;
     border-bottom: 1px solid var(--rule-navy);
     transform-origin: top center;
     opacity: 0; visibility: hidden; transform: translateY(-8px);
@@ -347,11 +348,11 @@ html { scrollbar-color: var(--navy-700) var(--navy-950); }
 .field input, .field select, .field textarea {
   width: 100%; min-height: 52px; padding: 12px 14px;
   font: 400 1rem/1.4 var(--sans); color: var(--text);
-  background: transparent; border: 1px solid rgba(20, 26, 36, .28); border-radius: 2px;
+  background: #fff; border: 1px solid rgba(20, 26, 36, .28); border-radius: 2px;
   transition: border-color .2s, box-shadow .2s; caret-color: var(--accent-text);
 }
 .field textarea { resize: vertical; min-height: 120px; }
-.field input::placeholder, .field textarea::placeholder { color: var(--text-2); opacity: .85; }
+.field input::placeholder, .field textarea::placeholder { color: var(--text-2); opacity: 1; }
 .field input:hover, .field select:hover, .field textarea:hover { border-color: var(--text-2); }
 .field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--accent-text); box-shadow: 0 0 0 3px rgba(196, 162, 102, .28); }
 .field [aria-invalid="true"] { border-color: #A3352B; }
@@ -405,3 +406,5 @@ html { scrollbar-color: var(--navy-700) var(--navy-950); }
 @media (prefers-reduced-transparency: reduce) {
   .site-header.is-scrolled { background: var(--navy-900); backdrop-filter: none; -webkit-backdrop-filter: none; }
 }
+
+.area-btn:active .area-toggle { transform: scale(.94); transition-duration: .1s; }

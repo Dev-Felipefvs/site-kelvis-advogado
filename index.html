@@ -65,7 +65,7 @@
   <header class="site-header" data-header>
     <div class="wrap header-inner">
       <a class="brand" href="#topo" aria-label="Kelvis Antônio, advogado. Voltar ao início">
-        <span class="brand-name">Kelvis Antônio</span>
+        <span class="brand-name" translate="no">Kelvis Antônio</span>
         <span class="brand-role">Advogado</span>
       </a>
       <nav class="nav" id="menu" aria-label="Principal" data-menu>
@@ -334,8 +334,8 @@
           <form class="form" data-form novalidate>
             <div class="field">
               <label for="f-nome">Seu nome</label>
-              <input id="f-nome" name="nome" type="text" autocomplete="name" required placeholder="Ex.: Maria Santos" aria-describedby="f-nome-err">
-              <p class="err" id="f-nome-err" hidden>Escreva seu nome para o advogado saber com quem fala.</p>
+              <input id="f-nome" name="nome" type="text" autocomplete="name" required placeholder="Ex.: Maria Santos…" spellcheck="false" aria-describedby="f-nome-err">
+              <p class="err" id="f-nome-err" aria-live="polite" hidden>Escreva seu nome para o advogado saber com quem fala.</p>
             </div>
             <div class="field">
               <label for="f-area">Assunto</label>
@@ -351,7 +351,7 @@
             </div>
             <div class="field">
               <label for="f-msg">Resumo do caso <span class="opt">(opcional)</span></label>
-              <textarea id="f-msg" name="mensagem" rows="4" placeholder="Conte em poucas linhas o que aconteceu."></textarea>
+              <textarea id="f-msg" name="mensagem" rows="4" placeholder="Conte em poucas linhas o que aconteceu…"></textarea>
             </div>
             <button class="btn btn-navy" type="submit">
               <svg class="i" aria-hidden="true"><use href="#i-wa"/></svg>
@@ -377,7 +377,7 @@
   <footer class="site-footer">
     <div class="wrap footer-grid">
       <div>
-        <p class="brand footer-brand"><span class="brand-name">Kelvis Antônio</span><span class="brand-role">Advogado · OAB/AL nº 20333</span></p>
+        <p class="brand footer-brand"><span class="brand-name" translate="no">Kelvis Antônio</span><span class="brand-role">Advogado · OAB/AL nº 20333</span></p>
         <p class="footer-legal">Kelvis Antonio da Silva Sociedade Individual de Advocacia</p>
       </div>
       <nav class="footer-nav" aria-label="Rodapé">
